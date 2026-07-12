@@ -13,13 +13,18 @@ Reads a `.md` file and converts it into a clean, styled HTML page. Supports:
 - Blockquotes
 - Horizontal rules
 
-## Usage
+## Running the release binary
 
+1. Download `mdx-linux-x86_64` from the [Releases](../../releases) page
+2. Make it executable:
 ```bash
-cargo run -- yourfile.md
+   chmod +x mdx-linux-x86_64
 ```
-
-This generates `output.html` in the project folder. Open it in your browser to view the result.
+3. Run it on a markdown file:
+```bash
+   ./mdx-linux-x86_64 yourfile.md
+```
+4. Open the generated `output.html` in your browser
 
 ## Example
 
