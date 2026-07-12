@@ -20,11 +20,33 @@ Reads a `.md` file and converts it into a clean, styled HTML page. Supports:
 ```bash
    chmod +x mdx-linux-x86_64
 ```
-3. Run it on a markdown file:
+
+### Option A: Convert your own Markdown file
+Place your `.md` file in the same folder as the binary, then run:
 ```bash
-   ./mdx-linux-x86_64 yourfile.md
+./mdx-linux-x86_64 yourfile.md
 ```
-4. Open the generated `output.html` in your browser
+Or point to it using a full path from anywhere:
+```bash
+./mdx-linux-x86_64 /path/to/yourfile.md
+```
+
+### Option B: Try it on the included sample file
+This repo includes a sample `test.md`. Download it into the same folder as the binary:
+```bash
+wget https://raw.githubusercontent.com/Tylerr-D/mdx/main/test.md
+```
+Then run:
+```bash
+./mdx-linux-x86_64 test.md
+```
+
+### Getting the output
+Either option generates a file called `output.html` in the same folder you ran the command from. Open it in any web browser to see the converted result:
+```bash
+xdg-open output.html
+```
+(or just double-click `output.html` in your file manager)
 
 ## Example
 
