@@ -19,44 +19,36 @@ mdx fits No Internet because it never touches the network. It reads a markdown f
 
 ## Running the release binary
 
-1. Download `mdx-linux-x86_64` from the [Releases](../../releases) page
-2. Make it executable:
+Grab the binary for your OS from [Releases](https://github.com/Tylerr-D/mdx/releases):
+- Linux: `mdx-linux-x86_64`
+- Windows: `mdx.exe`
+
+Linux, make it executable first:
 ```bash
-   chmod +x mdx-linux-x86_64
+chmod +x mdx-linux-x86_64
 ```
 
-### Option A: Convert your own Markdown file
-Place your `.md` file in the same folder as the binary, then run:
+### Option A: Convert your own file
 ```bash
-./mdx-linux-x86_64 yourfile.md
-```
-Or point to it using a full path from anywhere:
-```bash
-./mdx-linux-x86_64 /path/to/yourfile.md
+./mdx-linux-x86_64 yourfile.md      # Linux
+mdx.exe yourfile.md                 # Windows
 ```
 
-### Option B: Try it on the included sample file
-This repo includes a sample `test.md`. Download it into the same folder as the binary:
+### Option B: Use the included sample from me
 ```bash
 wget https://raw.githubusercontent.com/Tylerr-D/mdx/main/test.md
 ```
-Then run:
-```bash
-./mdx-linux-x86_64 test.md
-```
-### Getting the output
-Either option generates a file called `output.html` in the same folder you ran the command from.
+(or grab it directly: https://raw.githubusercontent.com/Tylerr-D/mdx/main/test.md)
 
-To view it rendered in a browser:
-```bash
-xdg-open output.html
-```
-(or just double-click `output.html` in your file manager)
+Then run as above with `test.md`.
 
-To quickly check the raw HTML without leaving the terminal:
+### Output
+Writes `output.html` to the same folder.
 ```bash
-cat output.html
+xdg-open output.html   # Linux
+cat output.html        # either OS, raw HTML in terminal
 ```
+Windows: just open `output.html` directly.
 
 ## Example
 
