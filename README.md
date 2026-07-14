@@ -13,6 +13,10 @@ Reads a `.md` file and converts it into a clean, styled HTML page. Supports:
 - Blockquotes
 - Horizontal rules
 
+## Theme: No Internet
+
+mdx fits No Internet because it never touches the network. It reads a markdown file off disk, converts it with plain Rust standard library code, and writes the html locally. You could turn off your internet and it would run exactly the same, since it completely works on your machine
+
 ## Running the release binary
 
 1. Download `mdx-linux-x86_64` from the [Releases](../../releases) page
@@ -40,13 +44,19 @@ Then run:
 ```bash
 ./mdx-linux-x86_64 test.md
 ```
-
 ### Getting the output
-Either option generates a file called `output.html` in the same folder you ran the command from. Open it in any web browser to see the converted result:
+Either option generates a file called `output.html` in the same folder you ran the command from.
+
+To view it rendered in a browser:
 ```bash
 xdg-open output.html
 ```
 (or just double-click `output.html` in your file manager)
+
+To quickly check the raw HTML without leaving the terminal:
+```bash
+cat output.html
+```
 
 ## Example
 
