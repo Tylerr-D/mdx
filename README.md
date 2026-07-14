@@ -66,7 +66,8 @@ Output (`output.html`):
 
 ## Note
 
-Built and tested on Linux (Ubuntu). To run on another OS, clone the repo and build it there with `cargo build --release` — Rust will compile a native binary for your platform.
+Built and tested on Linux, Windows build included too. make it yourself if macos with `cargo build --release`.
+
 
 ## Built with
 
